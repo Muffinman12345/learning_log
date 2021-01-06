@@ -1,0 +1,19 @@
+U
+
+    Q°^m  ã                   @   sL   d Z ddlmZmZ ddlmZ edejjƒededƒƒededƒƒgZd	S )
+au  learning_log URL Configuration
+
+The `urlpatterns` list routes URLs to views. For more information please see:
+    https://docs.djangoproject.com/en/3.0/topics/http/urls/
+Examples:
+Function views
+    1. Add an import:  from my_app import views
+    2. Add a URL to urlpatterns:  path('', views.home, name='home')
+Class-based views
+    1. Add an import:  from other_app.views import Home
+    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
+Including another URLconf
+    1. Import the include() function: from django.urls import include, path
+    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+é    )ÚpathÚinclude)Úadminzadmin/zusers/z
+users.urlsÚ zlearning_logs.urlsN)	Ú__doc__Údjango.urlsr   r   Zdjango.contribr   ÚsiteÚurlsÚurlpatterns© r   r   úCC:\Users\the laptop store\Desktop\learning_log\learning_log\urls.pyÚ<module>   s   ý
