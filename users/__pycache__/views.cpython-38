@@ -1,0 +1,13 @@
+U
+
+    ×˜±^U  ã                   @   sL   d dl mZ d dlmZ d dlmZmZmZ d dlm	Z	 dd„ Z
+dd„ Zd	S )
+é    )Úrender)ÚHttpResponseRedirect)ÚloginÚlogoutÚauthenticate)ÚUserCreationFormc                 C   s   t | ƒ ttdƒƒS )zLog the user out.úlearning_logs:index)r   r   Úreverse)Úrequest© r   ú=C:\Users\the laptop store\Desktop\learning_log\users\views.pyÚlogout_view   s    r
+   c                 C   sl   | j dkrtƒ }nFt| jd}| ¡ rX| ¡ }t|j| jd d}t| |ƒ tt	dƒƒS d|i}t
+| d|ƒS )zRegister a new user.ÚPOST)ÚdataÚ	password1)ÚusernameÚpasswordr   Úformzusers/register.html)Úmethodr   r   Úis_validÚsaver   r   r   r   r	   r   )r
+   r   Znew_userZauthenticated_userÚcontextr   r   r   Úregister
+   s    
+ÿ
+r   N)Údjango.shortcutsr   Údjango.httpr   Údjango.contrib.authr   r   r   Údjango.contrib.auth.formsr   r
+   r   r   r   r   r   Ú<module>   s
+   
