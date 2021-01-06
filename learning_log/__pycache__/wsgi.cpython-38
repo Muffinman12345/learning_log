@@ -1,0 +1,12 @@
+U
+
+    æ,³^Å  ã                   @   s@   d Z ddlZddlmZ ddlmZ ej dd¡ eeƒ ƒZdS )zÜ
+WSGI config for learning_log project.
+
+It exposes the WSGI callable as a module-level variable named ``application``.
+
+For more information on this file, see
+https://docs.djangoproject.com/en/3.0/howto/deployment/wsgi/
+é    N)Úget_wsgi_application)ÚClingÚDJANGO_SETTINGS_MODULEzlearning_log.settings)	Ú__doc__ÚosÚdjango.core.wsgir   Z	dj_staticr   ÚenvironÚ
+setdefaultÚapplication© r   r   úCC:\Users\the laptop store\Desktop\learning_log\learning_log\wsgi.pyÚ<module>   s
+   	
