@@ -1,0 +1,18 @@
+U
+
+    
+Ì±^…  ã                   @   s@   d dl mZ d dlmZ G dd„ dejƒZG dd„ dejƒZdS )é    )Úmodels)ÚUserc                   @   s<   e Zd ZejddZejddZeje	ej
+dZdd„ ZdS )	ÚTopicéÈ   )Ú
+max_lengthT©Úauto_now_add©Ú	on_deletec                 C   s   | j S )N©Útext©Úself© r   úFC:\Users\the laptop store\Desktop\learning_log\learning_logs\models.pyÚ__str__	   s    z
+Topic.__str__N)
+Ú__name__Ú
+__module__Ú__qualname__r   Ú	CharFieldr   Ú
+DateTimeFieldÚ
+date_addedÚ
+ForeignKeyr   ÚCASCADEÚownerr   r   r   r   r   r      s   r   c                   @   sF   e Zd ZejeejdZe ¡ Z	ej
+ddZG dd„ dƒZdd„ Z
+dS )	ÚEntryr	   Tr   c                   @   s   e Zd ZdZdS )z
+Entry.MetaÚentriesN)r   r   r   Úverbose_name_pluralr   r   r   r   ÚMeta   s   r   c                 C   s   | j d d… d S )Né2   z...r   r
+   r   r   r   r      s    z
+Entry.__str__N)r   r   r   r   r   r   r   ZtopicÚ	TextFieldr   r   r   r   r   r   r   r   r   r      s
+   r   N)Ú	django.dbr   Údjango.contrib.auth.modelsr   ÚModelr   r   r   r   r   r   Ú<module>   s   
