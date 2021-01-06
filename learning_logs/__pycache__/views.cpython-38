@@ -1,0 +1,33 @@
+U
+
+    q{µ^Ë  ã                   @   s    d dl mZmZ d dlmZmZ d dlmZ d dlm	Z	 ddl
+mZmZ ddl
+mZmZ dd	„ Ze	d
+d„ ƒZe	dd
+„ ƒZe	dd„ ƒZe	dd„ ƒZe	dd„ ƒZdS )é    )ÚrenderÚget_object_or_404)ÚHttpResponseRedirectÚHttp404)Úreverse)Úlogin_requiredé   )ÚTopicÚEntry)Ú	TopicFormÚ	EntryFormc                 C   s
+   t | dƒS )zThe home page for Learning Logzlearning_logs/index.html)r   )Úrequest© r   úEC:\Users\the laptop store\Desktop\learning_log\learning_logs\views.pyÚindex	   s    r   c                 C   s*   t jj| jd d¡}d|i}t| d|ƒS )zShow all topics)ÚownerÚ
+date_addedÚtopicszlearning_logs/topics.html)r	   ÚobjectsÚfilterÚuserÚorder_byr   )r
+   r   Úcontextr   r   r   r   
+   s    r   c                 C   s>   t t|d}|j| jkrt‚|j d¡}||dœ}t| d|ƒS )z(Show a single topic and all its entries.©Úidz-date_added)ÚtopicÚentrieszlearning_logs/topic.html)r   r	   r   r   r   Ú	entry_setr   r   )r
+   Útopic_idr   r   r   r   r   r   r      s    
+r   c                 C   s`   | j dkrtƒ }n:t| jƒ}| ¡ rL|jdd}| j|_| ¡  ttdƒƒS d|i}t	| d|ƒS )zAdd a new topic.ÚPOSTF©Úcommitzlearning_logs:topicsÚformzlearning_logs/new_topic.html)
+Úmethodr   r   Úis_validÚsaver   r   r   r   r   )r
+   r"   Ú	new_topicr   r   r   r   r&   !   s    
+
+r&   c                 C   sv   t jj|d}| jdkr tƒ }n@t| jd}| ¡ r`|jdd}||_| ¡  t	t
+d|gdƒS ||dœ}t| d	|ƒS )
+z'Add a new entry for a particular topic.r   r   )ÚdataFr    úlearning_logs:topic©Úargs)r   r"   zlearning_logs/new_entry.html)r	   r   Úgetr#   r   r   r$   r%   r   r   r   r   )r
+   r   r   r"   Ú	new_entryr   r   r   r   r,   3   s    
+ÿ
+r,   c                 C   s„   t jj|d}|j}|j| jkr$t‚| jdkr:t|d}n2t|| j	d}| 
+¡ rl| ¡  tt
+d|jgdƒS |||dœ}t| d|ƒS )	z"Edit an existing entry.r   r   )Úinstance)r-   r'   r(   r)   )Úentryr   r"   zlearning_logs/edit_entry.html)r
+   r   r+   r   r   r   r   r#   r   r   r$   r%   r   r   r   r   )r
+   Zentry_idr.   r   r"   r   r   r   r   Ú
+edit_entryG   s    
+ÿr/   N)Údjango.shortcutsr   r   Údjango.httpr   r   Údjango.urlsr   Údjango.contrib.auth.decoratorsr   Úmodelsr	   r
+   Úformsr   r   r   r   r   r&   r,   r/   r   r   r   r   Ú<module>   s    
+
+
+
+
