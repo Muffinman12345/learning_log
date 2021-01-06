@@ -1,0 +1,11 @@
+U
+
+    ~Ž±^  ã                   @   st   d Z ddlmZ ddlmZ ddlmZ ddlmZ dZ	edej
+dd	d
+dedej 
+¡ d
+dedejddgZ
+dS )zDefines url patterns for users.é    )Úpath)Ú	LoginView)Úviewsé   Úuserszlogin/zusers/login.html)Ú
+template_nameÚlogin)Únamezlogout/Úlogoutz	register/ÚregisterN)Ú__doc__Údjango.urlsr   Údjango.contrib.auth.viewsr   Údjango.contrib.authr   Z
+auth_viewsÚ Úapp_nameÚas_viewÚ
+LogoutViewr   Úurlpatterns© r   r   ú<C:\Users\the laptop store\Desktop\learning_log\users\urls.pyÚ<module>   s   ÿ÷
