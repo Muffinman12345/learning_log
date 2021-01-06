@@ -1,0 +1,8 @@
+U
+
+    R7°^  ã                   @   sD   d dl mZ ddlmZmZ G dd„ dejƒZG dd„ dejƒZdS )	é    )Úformsé   )ÚTopicÚEntryc                   @   s   e Zd ZG dd„ dƒZdS )Ú	TopicFormc                   @   s   e Zd ZeZdgZddiZdS )zTopicForm.MetaÚtextÚ N)Ú__name__Ú
+__module__Ú__qualname__r   ÚmodelÚfieldsÚlabels© r   r   úEC:\Users\the laptop store\Desktop\learning_log\learning_logs\forms.pyÚMeta   s   r   N©r	   r
+   r   r   r   r   r   r   r      s   r   c                   @   s   e Zd ZG dd„ dƒZdS )Ú	EntryFormc                   @   s2   e Zd ZeZdgZddiZdejddidiZ	dS )zEntryForm.Metar   r   ÚcolséP   )ÚattrsN)
+r	   r
+   r   r   r   r
+   r   r   ÚTextareaÚwidgetsr   r   r   r   r      s   r   Nr   r   r   r   r   r      s   r   N)Údjangor   Úmodelsr   r   Ú	ModelFormr   r   r   r   r   r   Ú<module>   s   
